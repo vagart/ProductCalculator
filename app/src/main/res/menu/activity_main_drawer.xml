@@ -9,9 +9,9 @@
             android:icon="@mipmap/ic_account_card_details_white_24dp"
             android:title="Визитки" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/brochure"
+            android:icon="@mipmap/ic_file_multiple_white_24dp"
+            android:title="Брошюра" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
