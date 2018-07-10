@@ -47,7 +47,7 @@ public class CutawaceFragment extends AbstractTabFragment {
         //ArrayAdapter<Formats> formatAdapter = new ArrayAdapter<Formats>(context, android.R.layout.simple_spinner_item, formats);
         FormatsAdapter formatAdapter = new FormatsAdapter(context,android.R.layout.simple_spinner_item, formats);
         // Определяем разметку для использования при выборе элемента
-        formatAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //formatAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Применяем адаптер к элементу spinner
         format.setAdapter(formatAdapter);
 
