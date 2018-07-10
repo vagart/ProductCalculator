@@ -3,6 +3,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">ТИПОГРАФИЯ УНОПРЕСС</string>
+    <string name="tab_item_cutawace">Визитки</string>
+    <string name="tab_item_broshure">Брошюра</string>
     <string name="nav_header_subtitle">uno@unopress.ru</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
