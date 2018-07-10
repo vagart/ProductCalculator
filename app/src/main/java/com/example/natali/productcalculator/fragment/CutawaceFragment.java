@@ -13,6 +13,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.example.natali.productcalculator.R;
+import com.example.natali.productcalculator.adapter.FormatsAdapter;
+import com.example.natali.productcalculator.data.Formats;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class CutawaceFragment extends AbstractTabFragment {
     private static final int LAYOUT = R.layout.fragment_cutawace;
@@ -31,10 +36,16 @@ public class CutawaceFragment extends AbstractTabFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(LAYOUT, container, false);
-        String[] formats ={"90x50","85x55","90x55"};
+        ArrayList<Formats> formats = new ArrayList<>();
+        formats.add(new Formats(90,50));
+        formats.add(new Formats(85,55));
+        formats.add(new Formats(90,55));
+
+//        String[] formats ={"90x50","85x55","90x55"};
         Spinner format = (Spinner) view.findViewById(R.id.formatCutawace);
         // Создаем адаптер ArrayAdapter с помощью массива строк и стандартной разметки элемета spinner
-        ArrayAdapter<String> formatAdapter = new ArrayAdapter<String>(context, android.R.layout.simple_spinner_item, formats);
+        //ArrayAdapter<Formats> formatAdapter = new ArrayAdapter<Formats>(context, android.R.layout.simple_spinner_item, formats);
+        FormatsAdapter formatAdapter = new FormatsAdapter(context,android.R.layout.simple_spinner_item, formats);
         // Определяем разметку для использования при выборе элемента
         formatAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Применяем адаптер к элементу spinner
