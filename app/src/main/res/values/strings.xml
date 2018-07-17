@@ -8,4 +8,11 @@
     <string name="nav_header_subtitle">uno@unopress.ru</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="colorationText">Цветность</string>
+    <string name="printText">Печать</string>
+    <string name="paperText">Бумага</string>
+    <string name="dopdecortext">Дополнительная отделка</string>
+    <string name="digitalprinting">Цифровая печать</string>
+    <string name="embossed">Тиснение</string>
+    <string name="serigraphy">Шелкография</string>
 </resources>
